@@ -46,6 +46,7 @@
    chmod +x /home/zjmf/dashboard/www/extend/other/check_main
    wget https://raw.githubusercontent.com/feiyu201/zjmf/main/ext/cloud/idcsmart.so -O /usr/lib64/php/modules/idcsmart.so
    echo "extension=idcsmart.so" >> /etc/php.d/40-idcsmart.ini
+   echo "idcsmart.url=http://你授权服务器站点/" >> /etc/php.d/40-idcsmart.ini
    systemctl restart php-fpm
    ```
    
@@ -58,6 +59,7 @@
    chmod +x /home/zjmf/dashboard/www/extend/other/check_main
    wget https://ghproxy.com/https://raw.githubusercontent.com/feiyu201/zjmf/main/ext/cloud/idcsmart.so -O /usr/lib64/php/modules/idcsmart.so
    echo "extension=idcsmart.so" >> /etc/php.d/40-idcsmart.ini
+   echo "idcsmart.url=http://你授权服务器站点/" >> /etc/php.d/40-idcsmart.ini
    systemctl restart php-fpm
    ```
 
